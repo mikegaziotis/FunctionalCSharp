@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Roufe.Examples/Roufe.Examples.csproj" />
+  <Project Path="Roufe/Roufe.csproj" />
+</Solution>

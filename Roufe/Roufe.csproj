@@ -1,0 +1,345 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>Roufe</PackageId>
+    <LangVersion>14</LangVersion>
+    <Nullable>enable</Nullable>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyTitle>Roufe</AssemblyTitle>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+      <_Parameter1>CSharpFunctionalExtensions.Tests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="OtherExtensions\EnumerableExtensions.Task.cs">
+      <DependentUpon>EnumerableExtensions.cs</DependentUpon>
+    </Compile>
+    <Compile Update="OtherExtensions\EnumerableExtensions.ValueTask.cs">
+      <DependentUpon>EnumerableExtensions.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Update="Option\Extensions\AsOption.Task.cs">
+      <DependentUpon>AsOption.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\AsOption.ValueTask.cs">
+      <DependentUpon>AsOption.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\Apply.Task.cs">
+      <DependentUpon>Apply.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\Apply.ValueTask.cs">
+      <DependentUpon>Apply.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\Bind.Task.cs">
+      <DependentUpon>Bind.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\Bind.ValueTask.cs">
+      <DependentUpon>Bind.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\Execute.Task.cs">
+      <DependentUpon>Execute.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\Execute.ValueTask.cs">
+      <DependentUpon>Execute.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\ExecuteNoValue.Task.cs">
+      <DependentUpon>ExecuteNoValue.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\ExecuteNoValue.ValueTask.cs">
+      <DependentUpon>ExecuteNoValue.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\GetValueOrDefault.Task.cs">
+      <DependentUpon>GetValueOrDefault.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\GetValueOrDefault.ValueTask.cs">
+      <DependentUpon>GetValueOrDefault.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\Map.Task.cs">
+      <DependentUpon>Map.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\Map.ValueTask.cs">
+      <DependentUpon>Map.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\Match.Task.cs">
+      <DependentUpon>Match.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\Match.ValueTask.cs">
+      <DependentUpon>Match.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\Or.Task.cs">
+      <DependentUpon>Or.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\Or.ValueTask.cs">
+      <DependentUpon>Or.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\ToResult.Task.cs">
+      <DependentUpon>ToResult.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\ToResult.ValueTask.cs">
+      <DependentUpon>ToResult.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\ToUnitResult.Task.cs">
+      <DependentUpon>ToUnitResult.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\ToUnitResult.ValueTask.cs">
+      <DependentUpon>ToUnitResult.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\Where.Task.cs">
+      <DependentUpon>Where.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Option\Extensions\Where.ValueTask.cs">
+      <DependentUpon>Where.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Update="Result\Methods\FailureIf.Task.cs">
+      <DependentUpon>FailureIf.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\FailureIf.ValueTask.cs">
+      <DependentUpon>FailureIf.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\SuccessIf.Task.cs">
+      <DependentUpon>SuccessIf.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\SuccessIf.ValueTask.cs">
+      <DependentUpon>SuccessIf.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Try.Task.cs">
+      <DependentUpon>Try.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Try.ValueTask.cs">
+      <DependentUpon>Try.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Result\Methods\Extensions\AsOption.Task.cs">
+      <DependentUpon>AsOption.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\AsOption.ValueTask.cs">
+      <DependentUpon>AsOption.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Apply.Task.cs">
+      <DependentUpon>Apply.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Apply.ValueTask.cs">
+      <DependentUpon>Apply.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Bind.Task.cs">
+      <DependentUpon>Bind.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Bind.ValueTask.cs">
+      <DependentUpon>Bind.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\BindIf.Task.cs">
+      <DependentUpon>BindIf.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\BindIf.ValueTask.cs">
+      <DependentUpon>BindIf.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\BindOptional.Task.cs">
+      <DependentUpon>BindOptional.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\BindOptional.ValueTask.cs">
+      <DependentUpon>BindOptional.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\BindTry.Task.cs">
+      <DependentUpon>BindTry.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\BindTry.ValueTask.cs">
+      <DependentUpon>BindTry.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\BindWithTransactionScope.Task.cs">
+      <DependentUpon>BindWithTransactionScope.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\BindWithTransactionScope.ValueTask.cs">
+      <DependentUpon>BindWithTransactionScope.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Check.Task.cs">
+      <DependentUpon>Check.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Check.ValueTask.cs">
+      <DependentUpon>Check.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\CheckIf.Task.cs">
+      <DependentUpon>CheckIf.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\CheckIf.ValueTask.cs">
+      <DependentUpon>CheckIf.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Combine.Task.cs">
+      <DependentUpon>Combine.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Combine.ValueTask.cs">
+      <DependentUpon>Combine.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\CombineInOrder.Task.cs">
+      <DependentUpon>Combine.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\CombineInOrder.ValueTask.cs">
+      <DependentUpon>Combine.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Compensate.Task.cs">
+      <DependentUpon>Compensate.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Compensate.ValueTask.cs">
+      <DependentUpon>Compensate.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Ensure.Task.cs">
+      <DependentUpon>Ensure.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Ensure.ValueTask.cs">
+      <DependentUpon>Ensure.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\EnsureNot.Task.cs">
+      <DependentUpon>EnsureNot.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\EnsureNot.ValueTask.cs">
+      <DependentUpon>EnsureNot.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\EnsureNotNull.Task.cs">
+      <DependentUpon>EnsureNotNull.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\EnsureNotNull.ValueTask.cs">
+      <DependentUpon>EnsureNotNull.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Finally.Task.cs">
+      <DependentUpon>Finally.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Finally.ValueTask.cs">
+      <DependentUpon>Finally.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Flatten.Task.cs">
+      <DependentUpon>Flatten.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Flatten.ValueTask.cs">
+      <DependentUpon>Flatten.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\BiMap.Task.cs">
+      <DependentUpon>BiMap.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\BiMap.ValueTask.cs">
+      <DependentUpon>BiMap.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\GetValueOrDefault.Task.cs">
+      <DependentUpon>GetValueOrDefault.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\GetValueOrDefault.ValueTask.cs">
+      <DependentUpon>GetValueOrDefault.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Map.Task.cs">
+      <DependentUpon>Map.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Map.ValueTask.cs">
+      <DependentUpon>Map.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\MapError.Task.cs">
+      <DependentUpon>MapError.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\MapError.ValueTask.cs">
+      <DependentUpon>MapError.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\MapIf.Task.cs">
+      <DependentUpon>MapIf.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\MapIf.ValueTask.cs">
+      <DependentUpon>MapIf.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\MapTry.Task.cs">
+      <DependentUpon>MapTry.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\MapTry.ValueTask.cs">
+      <DependentUpon>MapTry.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\MapWithTransactionScope.Task.cs">
+      <DependentUpon>MapWithTransactionScope.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\MapWithTransactionScope.ValueTask.cs">
+      <DependentUpon>MapWithTransactionScope.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Match.Task.cs">
+      <DependentUpon>Match.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Match.ValueTask.cs">
+      <DependentUpon>Match.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\OnFailureCompensate.Task.cs">
+      <DependentUpon>OnFailureCompensate.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\OnFailureCompensate.ValueTask.cs">
+      <DependentUpon>OnFailureCompensate.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\OnSuccessTry.Task.cs">
+      <DependentUpon>OnSuccessTry.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\OnSuccessTry.ValueTask.cs">
+      <DependentUpon>OnSuccessTry.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Select.Task.cs">
+      <DependentUpon>Select.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Select.ValueTask.cs">
+      <DependentUpon>Select.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\SelectMany.Task.cs">
+      <DependentUpon>SelectMany.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\SelectMany.ValueTask.cs">
+      <DependentUpon>SelectMany.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Tap.Task.cs">
+      <DependentUpon>Tap.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\Tap.ValueTask.cs">
+      <DependentUpon>Tap.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\TapError.Task.cs">
+      <DependentUpon>TapError.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\TapError.ValueTask.cs">
+      <DependentUpon>TapError.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\TapErrorIf.Task.cs">
+      <DependentUpon>TapErrorIf.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\TapErrorIf.ValueTask.cs">
+      <DependentUpon>TapErrorIf.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\TapIf.Task.cs">
+      <DependentUpon>TapIf.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\TapIf.ValueTask.cs">
+      <DependentUpon>TapIf.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\TapIfTry.Task.cs">
+      <DependentUpon>TapIfTry.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\TapIfTry.ValueTask.cs">
+      <DependentUpon>TapIfTry.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\TapIf.Task.cs">
+      <DependentUpon>TapIf.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\TapIf.ValueTask.cs">
+      <DependentUpon>TapIf.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\TapTry.Task.cs">
+      <DependentUpon>TapTry.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\TapTry.ValueTask.cs">
+      <DependentUpon>TapTry.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\WithTransactionScope.Task.cs">
+      <DependentUpon>WithTransactionScope.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Result\Methods\Extensions\WithTransactionScope.ValueTask.cs">
+      <DependentUpon>WithTransactionScope.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
